@@ -18,7 +18,7 @@ var {Todo} = require('./todo1');
 
 var app = express();
 
-//const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyparser.json());
 
@@ -70,17 +70,17 @@ app.get('/todos/:id',(req,res) => {
     });
 
 });
-
+/*
 app.listen(3000, () => {
     console.log("started on port");
 });
-
+*/
 //dynamic assign port
-/*
+
 app.listen(port, () => {
     console.log(`port assign is ${port}`);
 });
-*/
+
 module.exports = {app};
 //create model in single page
 /*
